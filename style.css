@@ -1,0 +1,569 @@
+html{
+	font-family: sans-serif;
+	/* scroll-behavior:smooth; */
+}
+
+body{
+	margin: 0px;
+}
+
+/*Body-Header*/
+#home{
+	background-image: url('images/macbook_mouse.jpg');
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	opacity: 0.8;
+	height: 65vh;
+	padding-top: 1.2rem;
+}
+
+/*Percentage Scrolled */
+#percentage-scrolled-container{
+	position: fixed;
+    right: 3%;
+    top: 3%;
+    box-shadow: 0px 0px 10px 1px black;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: white;
+    z-index: 1;
+    text-align: center;
+}
+
+#percentage-scrolled-container p{
+	margin: 0;
+	color: #52968a;
+	font-size: 1.25rem;
+}
+
+/*Horizontal List and Navigation Bar*/
+.horizontal-list{
+	margin: 0px;
+	list-style: none;
+	padding: 0px;
+}
+
+.horizontal-list li{
+	display: inline-block;
+	margin: 0px 12px 12px 0px;
+}
+
+.horizontal-list li a{
+	text-decoration: none;
+	color: white;
+
+}
+
+#hamburger-icon{
+	width: 0;
+	height: 0;
+	position: absolute;
+	top: 1rem;
+	left: 1rem;
+	font-size: 2rem;
+	overflow: hidden;
+	z-index: 3;
+	color: white;
+	cursor: pointer;
+}
+
+#hamburger-icon a:link{
+	color: white;
+}
+
+#hamburger-icon a:active{
+	color: white;
+}
+
+#hamburger-icon a:visited{
+	color: white;
+}
+
+#hamburger-navbar{
+	transition: all 0.5s ease-in-out;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: white;
+	overflow: hidden;
+	width: 0;
+	height: 0;
+	z-index: 4;
+}
+
+#hamburger-navbar ul{
+	list-style-type: none;
+	font-size: 1.5rem;
+}
+
+#hamburger-navbar li {
+    margin-bottom: 0.5rem;
+}
+
+#hamburger-navbar li a{
+	text-decoration: none;
+	color: grey;
+	margin-bottom: 3rem;
+}
+
+#close-navbar{
+	margin: 1.25rem;
+	font-size: 1.5rem;
+}
+
+#hamburger-navbar-container{
+	position: absolute;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+}
+
+@media all and (max-width: 800px){
+	#hamburger-navbar:target{
+		width: 100%;
+		height: 100%;
+	}
+
+	#hamburger-icon{
+		width: auto;
+		height: auto;
+	}
+
+	#navbar{
+		display: none;
+	}
+	#hamburger-navbar-container{
+		height: 80%;
+		width: 100%;
+	}
+}
+
+.nav-menu li a:hover{
+	color: lightgrey !important;
+	border-bottom: 1px solid lightgrey;
+	transition: color 0.35s;
+	cursor: pointer;
+}
+
+.text-center-align{
+	text-align: center;
+}
+
+
+
+/*Name-Social Container */
+#name-social-container{
+	margin-top: 20vh;
+}
+
+#my-name{
+	text-transform: capitalize;
+	color: white;
+	font-family: sans-serif;
+	font-size: 3rem;
+	margin-bottom: 0.5rem;
+	letter-spacing: 0.1rem;
+	font-weight: 700;
+}
+
+.social li a i{
+	font-size: 1rem;
+	padding: 8px;
+}
+
+.social li a i:hover{
+	border-radius: 50%;
+	box-shadow: 0px 0px 6px 4px rgba(230,196,196,0.3);
+	transition: box-shadow 0.3s;	
+}
+
+/*Every Section in general*/
+#content section{
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.section-heading{
+	width: auto;
+	padding: 20px 10px 10px;
+	font-weight: 400;
+}
+
+.section-heading span{
+	color: #2857a4;
+	display: inline-block;
+	font-size: 40px;
+	padding-top: 10px;
+	margin-right: 0.5rem;
+}
+
+#content section:nth-child(even){
+	background-color: #EFEFEF;
+}
+
+#content section:nth-child(odd){
+	background-color: white;
+}
+
+
+/*About Section*/
+#about{
+	position: relative;
+	justify-content: space-around;
+	align-items: center;
+
+}
+
+#my-image{
+	width: 12rem;
+	height: 12rem;
+	margin: auto;
+	margin-top: -16vh;
+}
+
+#my-image img{
+	height: 100%;
+	width: 100%;
+	border-radius: 50%;
+	border: 3px solid white;
+	box-shadow: 0px 5px 19px 2px lightgrey;
+}
+
+#about p{
+	color: grey;
+	font-size: 1.2rem;
+	font-family: sans-serif;
+	margin: 2% 15%;
+}
+
+/*Skills Section*/
+
+#skills-display{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 70%;
+	justify-content: space-around;
+}
+
+.skill-progress{
+	width: 10rem;
+	height: 2rem;
+	background-color: lightgrey;
+	border-radius: 2rem;
+	margin: 5px 40px 40px 0px;	
+}
+
+.skill-color-progress{
+	height: inherit;
+	border-top-left-radius: 2rem;
+	border-bottom-left-radius: 2rem;
+	box-shadow: 3px 0 3px 0px #9E9E8A;
+}
+
+.skill-name span{
+	color: white;
+	font-size: 1.6rem;
+}
+
+.skill-name{
+	margin-left: 1.2rem;
+	padding-top: 0.05rem;
+}
+
+
+/*Experience Section */
+
+.timeline{
+	position: relative;
+	width: 75%;
+}
+
+.timeline-box{
+	position: relative;
+	width: 40%;
+	left: 5%;
+	margin: 5px;
+	min-height: 150px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.timeline-box:nth-child(2n){
+	left: 53%;
+}
+
+.timeline-box:nth-child(2n + 1)::after{
+	content:'';
+	background-color: grey;
+	width: 0.75rem;
+	height: 0.75rem;
+	border-radius: 50%;
+	position: absolute;
+	top: 30%;
+	right: -12.75%;
+	z-index: 1;
+}
+
+.timeline-box:nth-child(2n)::before{
+	content:'';
+	background-color: grey;
+	width: 0.75rem;
+	height: 0.75rem;
+	border-radius: 50%;
+	position: absolute;
+	top: 30%;
+	left: -10.5%;
+	z-index: 1;
+}
+
+.institution-logo{
+	width: 3rem;
+	height: 3rem;
+}
+
+.institution-logo img{
+	width: inherit;
+	height: inherit;
+}
+
+.degree{
+	margin-bottom: 0.8rem;
+	font-size: 1.4rem;
+	color: #2857A4;
+	font-weight: 600;
+}
+
+.institution-name{
+	color: #EB822D;
+	font-weight: 500;
+}
+
+.timeline-box-title-div div{
+	text-align: right;
+}
+
+.timeline-box-duration{
+	color: grey;
+}
+
+.timeline-box-desc{
+	color: grey;
+}
+
+.timeline-divider{
+	position: absolute;
+	left: 50%;
+	top: 9%;
+	width: 0px;
+	height: 74%;
+	border: 1px dashed #94D3FD;
+
+}
+
+@media all and (max-width:600px){
+	.timeline-divider{
+		left: 5%;
+	}
+	.timeline-box:nth-child(2n + 1){
+		width: 80%;
+		left: 12%;
+	}
+	.timeline-box:nth-child(2n){
+		width: 80%;
+		left: 12%;
+	}
+	.timeline-box:nth-child(2n + 1)::after{
+		left: -11.60%;
+	}
+	.timeline-box:nth-child(2n)::before{
+		left: -11.75%;
+	}
+}
+
+.timeline-traveller{
+	position: sticky;
+	top: 15%;
+	transform: rotate(90deg);
+	color: #2857A4;
+	font-size: 1.85rem;
+	z-index: 2;
+	margin-left: -1px;
+}
+
+/*Portfolio Section*/
+#portfolio-display{
+	width: 80%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.portfolio-display-content{
+	width: 18.5rem;
+	height: 15.5rem;
+	margin-bottom: 15px;
+	position: relative;
+}
+
+.portfolio-display-content:hover{ 
+	box-shadow: 0px 0px 20px 1px #74ADC8;
+}
+
+.portfolio-display-content img{
+	width: inherit;
+	height: inherit;
+}
+
+.portfolio-details{
+	transition: all 0.5s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    color: transparent;
+    text-align: center;
+    font-size: 32px;
+
+
+}
+
+.portfolio-display-content:hover .portfolio-details{
+	background-color: #80808078;
+	color: white;
+}
+
+
+/*Contact Section*/
+
+#contact{
+    background: linear-gradient(to right, #2857a4, #403066 );
+    height: auto;
+}
+
+#contact .section-heading span{
+    color: white;
+}
+
+#contact-form-details-container{
+    display: flex;
+    width: 80%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: auto;
+}
+
+#contact-form{
+    width: 30rem;
+}
+
+
+.contact-form-fields{
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+    width: 90%;
+    margin: 1rem;
+    font-size: 1.2rem;
+    border-bottom: 2px solid white;
+}
+
+.contact-form-fields:focus{
+    outline: none;
+}
+
+#contact-form button{
+    background-color: transparent;
+    padding: 0.7rem;
+    text-align: center;
+    border: 2px solid white;
+    color: white;
+    font-weight: 550;
+    font-size: 1rem;
+    width: 10rem;
+    display: block;
+    margin: 1rem auto;
+}
+
+#contact-details{
+    width: 32rem;
+}
+
+#contact-details{
+    color: white;
+}
+
+#contact-details div p{
+    font-size: 1rem;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 100;
+}
+
+#contact-details div ul{
+    list-style-type: none;
+}
+
+#contact-details div ul{
+    text-align: left;
+}
+
+#contact-details div ul li i{
+    margin: 0px 0.8rem 1.4rem -2.4rem;
+}
+
+#contact-social-container{
+	margin: 2rem 2rem 7rem;
+}
+
+#contact-social-container .social li a i{
+    font-size: 1.2rem;
+    margin: 1rem 2rem 2rem 1rem;
+}
+
+
+
+/*Color classes for skill progress divs*/
+.red-color{
+	background-color: #EC4D1C;
+}
+
+.blue-color{
+	background-color: #2857A4;
+}
+
+.purple-color{
+	background-color: #93738C;
+}
+
+.green-color{
+	background-color: #0B8176;
+}
+
+/*General margin-bottom class*/
+.mb75px{
+	margin-bottom: 75px;
+}
+
+/* Progress percentages*/
+.eighty-five-percent{
+	width: 85%;
+}
+.seventy-percent{
+	width: 70%;
+}
+.eighty-percent{
+	width: 80%;
+}
+
+.seventy-five-percent{
+	width: 75%;
+}

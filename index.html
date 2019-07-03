@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Dhruv Jain
+		</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" type="image/x-icon" href="">
+	</head>
+	<body>
+		<!-- Hamburger Navbar Section (for mobile size devices)-->
+		<div id="hamburger-navbar-container">
+			<div id="hamburger-icon">
+				<a href="#hamburger-navbar"><i class="fas fa-bars"></i></a>
+			</div>
+			<div id="hamburger-navbar">
+				<div id="close-navbar">
+					<a href="#">X</a>
+				</div>
+				<ul class="text-center-align nav-menu">
+					<li><a href="#">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#skills">Skills</a></li>
+					<li><a href="#experience">Experience</a></li>
+					<li><a href="#education">Education</a></li>
+					<li><a href="#portfolio">Portfolio</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+				<!-- METHOD 1 (JS) 	
+					<li data-value="home"><a>Home</a></li>
+					<li data-value="about"><a>About</a></li>
+					<li data-value="skills"><a>Skills</a></li>
+					<li data-value="experience"><a>Experience</a></li>
+					<li data-value="education"><a>Education</a></li>
+					<li data-value="portfolio"><a>Portfolio</a></li>
+					<li data-value="contact"><a>Contact</a></li>
+				-->
+			</div>
+		</div>
+		<!--Percentage Scrolled-->
+		<div id="percentage-scrolled-container">
+			<p>
+				<span id="percentage-scrolled">0</span>
+				<span>% Viewed</span>
+
+			</p>
+		</div>
+		<!--Body Header-->
+		<header id="home">
+			<nav id="navbar">
+				<ul class="horizontal-list text-center-align nav-menu">
+					<li><a href="#">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#skills">Skills</a></li>
+					<li><a href="#experience">Experience</a></li>
+					<li><a href="#education">Education</a></li>
+					<li><a href="#portfolio">Portfolio</a></li>
+					<li><a href="#contact">Contact</a></li>
+					<!-- METHOD 1 (JS) 
+					<li data-value="home"><a>Home</a></li>
+					<li data-value="about"><a>About</a></li>
+					<li data-value="skills"><a>Skills</a></li>
+					<li data-value="experience"><a>Experience</a></li>
+					<li data-value="education"><a>Education</a></li>
+					<li data-value="portfolio"><a>Portfolio</a></li>
+					<li data-value="contact"><a>Contact</a></li> -->
+				</ul>
+			</nav>
+			
+			<div id="name-social-container" class="text-center-align">
+				<h2 id="my-name">
+					Dhruv Jain
+				</h2>
+
+				<ul class="horizontal-list text-center-align social">
+					<li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+					<li><a href="#"><i class="fab fa-stack-overflow"></i></a></li>
+					<li><a href="#skills"><i class="fab fa-facebook-f"></i></a></li>
+					<li><a href="#experience"><i class="fab fa-google-plus-g"></i></a></li>
+					<li><a href="#education"><i class="fab fa-quora"></i></a></li>
+				</ul>
+			</div>
+
+		</header>
+		<div id="content">
+			<main>
+				<section id="about" class="text-center-align">
+					<div id="my-image">
+						<img src="images/profile-photo.jpeg" alt="&nbsp; Profile photo" >	
+					</div>
+					
+					<p>
+						I am doing Bachelor's of Technology in Electronics and Communication Engineering from Punjab Engineering College(Deemed to be University), Chandigarh. I love to code. And ...
+					</p>
+				</section>
+
+				<section id="skills">	
+					<h1 class="section-heading mb75px">
+						<span><i class="fas fa-chalkboard-teacher"></i></span>
+						<span>SKILLS</span>
+					</h1>
+
+					<div id="skills-display">
+						<div class="skill-progress">
+							<div class="skill-color-progress blue-color eighty-five-percent" data-skill-level="85">
+								<div class="skill-name">
+									<span>C++</span>
+								</div>
+							</div>
+						</div>
+						<div class="skill-progress">
+							<div class="skill-color-progress purple-color seventy-percent" data-skill-level="75">
+								<div class="skill-name">
+									<span>CSS</span>
+								</div>
+							</div>
+						</div>
+						<div class="skill-progress">
+							<div class="skill-color-progress red-color eighty-percent" data-skill-level="85">
+								<div class="skill-name">
+									<span>Javascript</span>
+								</div>
+							</div>
+						</div>
+						<div class="skill-progress">
+							<div class="skill-color-progress green-color seventy-five-percent" data-skill-level="75">
+								<div class="skill-name">
+									<span>HTML</span>
+								</div>
+							</div>
+						</div>
+						<div class="skill-progress">
+							<div class="skill-color-progress purple-color seventy-percent" data-skill-level="75">
+								<div class="skill-name">
+									<span>Python</span>
+								</div>
+							</div>
+						</div>
+						<div class="skill-progress">
+							<div class="skill-color-progress red-color eighty-five-percent" data-skill-level="85">
+								<div class="skill-name">
+									<span>NodeJs</span>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+				</section>
+
+				<section id="experience">
+					<h1 class="section-heading mb75px">
+						<span><i class="fas fa-briefcase"></i></span>
+						<span>Work Experience</span>
+					</h1>
+					<div class="timeline">
+						<div class="timeline-box">
+							<div class="institution-logo">
+								<img src="images/pec-logo.png" alt="&nbsp; logo">
+							</div>
+							<div class="timeline-box-title-div">
+								<div class="degree">
+									B.Tech
+								</div>
+								<div class="institution-name">
+									PEC, Chandigarh
+								</div>
+								<div class="timeline-box-duration">
+									August 2017 - Present
+								</div>
+							</div>
+							<div class="timeline-box-desc">
+								<p>I am doing Bachelor's of Technology in Electronics and Communication Engineering from Punjab Engineering College(Deemed to be University), Chandigarh. I love to code. And ...</p>
+							</div>
+						</div>
+						<div class="timeline-box">
+							<div class="institution-logo">
+								<img src="images/pec-logo.png" alt="&nbsp; logo">
+							</div>
+							<div class="timeline-box-title-div">
+								<div class="degree">
+									B.Tech
+								</div>
+								<div class="institution-name">
+									PEC, Chandigarh
+								</div>
+								<div class="timeline-box-duration">
+									August 2017 - Present
+								</div>
+							</div>
+							<div class="timeline-box-desc">
+								<p>I am doing Bachelor's of Technology in Electronics and Communication Engineering from Punjab Engineering College(Deemed to be University), Chandigarh. I love to code. And ...</p>
+							</div>
+						</div>
+						<div class="timeline-box">
+							<div class="institution-logo">
+								<img src="images/pec-logo.png" alt="&nbsp; logo">
+							</div>
+							<div class="timeline-box-title-div">
+								<div class="degree">
+									B.Tech
+								</div>
+								<div class="institution-name">
+									PEC, Chandigarh
+								</div>
+								<div class="timeline-box-duration">
+									August 2017 - Present
+								</div>
+							</div>
+							<div class="timeline-box-desc">
+								<p>I am doing Bachelor's of Technology in Electronics and Communication Engineering from Punjab Engineering College(Deemed to be University), Chandigarh. I love to code. And ...</p>
+							</div>
+						</div>
+						<div class="timeline-box">
+							<div class="institution-logo">
+								<img src="images/pec-logo.png" alt="&nbsp; logo">
+							</div>
+							<div class="timeline-box-title-div">
+								<div class="degree">
+									B.Tech
+								</div>
+								<div class="institution-name">
+									PEC, Chandigarh
+								</div>
+								<div class="timeline-box-duration">
+									August 2017 - Present
+								</div>
+							</div>
+							<div class="timeline-box-desc">
+								<p>I am doing Bachelor's of Technology in Electronics and Communication Engineering from Punjab Engineering College(Deemed to be University), Chandigarh. I love to code. And ...</p>
+							</div>
+						</div>
+
+						<div class="timeline-divider">
+							<div class="timeline-traveller">
+								<i class="fas fa-plane"></i>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section id="education">
+					<h1 class="section-heading mb75px">
+						<span><i class="fas fa-graduation-cap"></i></span>
+						<span>Education</span>
+					</h1>
+					<div class="timeline">
+						<div class="timeline-box">
+							<div class="institution-logo">
+								<img src="images/pec-logo.png" alt="&nbsp; logo">
+							</div>
+							<div class="timeline-box-title-div">
+								<div class="degree">
+									B.Tech
+								</div>
+								<div class="institution-name">
+									PEC, Chandigarh
+								</div>
+								<div class="timeline-box-duration" id="testing">
+									August 2017 - Present
+								</div>
+							</div>
+							<div class="timeline-box-desc">
+								<p>I am doing Bachelor's of Technology in Electronics and Communication Engineering from Punjab Engineering College(Deemed to be University), Chandigarh. I love to code. And ...</p>
+							</div>
+						</div>
+						<div class="timeline-box">
+							<div class="institution-logo">
+								<img src="images/pec-logo.png" alt="&nbsp; logo">
+							</div>
+							<div class="timeline-box-title-div">
+								<div class="degree">
+									B.Tech
+								</div>
+								<div class="institution-name">
+									PEC, Chandigarh
+								</div>
+								<div class="timeline-box-duration">
+									August 2017 - Present
+								</div>
+							</div>
+							<div class="timeline-box-desc">
+								<p>I am doing Bachelor's of Technology in Electronics and Communication Engineering from Punjab Engineering College(Deemed to be University), Chandigarh. I love to code. And ...</p>
+							</div>
+						</div>
+						<div class="timeline-box">
+							<div class="institution-logo">
+								<img src="images/pec-logo.png" alt="&nbsp; logo">
+							</div>
+							<div class="timeline-box-title-div">
+								<div class="degree">
+									B.Tech
+								</div>
+								<div class="institution-name">
+									PEC, Chandigarh
+								</div>
+								<div class="timeline-box-duration">
+									August 2017 - Present
+								</div>
+							</div>
+							<div class="timeline-box-desc">
+								<p>I am doing Bachelor's of Technology in Electronics and Communication Engineering from Punjab Engineering College(Deemed to be University), Chandigarh. I love to code. And ...</p>
+							</div>
+						</div>
+						<div class="timeline-box">
+							<div class="institution-logo">
+								<img src="images/pec-logo.png" alt="&nbsp; logo">
+							</div>
+							<div class="timeline-box-title-div">
+								<div class="degree">
+									B.Tech
+								</div>
+								<div class="institution-name">
+									PEC, Chandigarh
+								</div>
+								<div class="timeline-box-duration">
+									August 2017 - Present
+								</div>
+							</div>
+							<div class="timeline-box-desc">
+								<p>I am doing Bachelor's of Technology in Electronics and Communication Engineering from Punjab Engineering College(Deemed to be University), Chandigarh. I love to code. And ...</p>
+							</div>
+						</div>
+
+						<div class="timeline-divider">
+							<div class="timeline-traveller">
+								<i class="fas fa-car-side"></i>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section id="portfolio">
+					<h1 class="section-heading mb75px">
+						<span><i class="fas fa-th-list"></i></i></span>
+						<span>Portfolio</span>
+					</h1>
+					<div id="portfolio-display">
+						<div class="portfolio-display-content">
+							<img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000025_1550237330_codezen_2.png">
+							<div class="portfolio-details">
+                        		<p>
+                            		Write here basic details about the project.
+                        		</p>
+                    		</div>
+						</div>
+						<div class="portfolio-display-content">
+							<img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000025_1550237330_codezen_2.png">
+							<div class="portfolio-details">
+                        		<p>
+                            		Write here basic details about the project.
+                        		</p>
+                    		</div>
+						</div>
+						<div class="portfolio-display-content">
+							<img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000025_1550237330_codezen_2.png">
+							<div class="portfolio-details">
+                        		<p>
+                            		Write here basic details about the project.
+                        		</p>
+                    		</div>
+						</div>
+						<div class="portfolio-display-content">
+							<img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000024_1550237299_codezen.png">
+							<div class="portfolio-details">
+                        		<p>
+                            		Write here basic details about the project.
+                        		</p>
+                    		</div>
+						</div>
+						<div class="portfolio-display-content">
+							<img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000024_1550237299_codezen.png">
+							<div class="portfolio-details">
+                        		<p>
+                            		Write here basic details about the project.
+                        		</p>
+                    		</div>
+						</div>
+						<div class="portfolio-display-content">
+							<img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000024_1550237299_codezen.png">
+							<div class="portfolio-details">
+                        		<p>
+                            		Write here basic details about the project.
+                        		</p>
+                    		</div>
+						</div>
+					</div>
+					
+				</section>
+
+				<section id="contact">
+					<h1 class="section-heading mb75px">
+						<span><i class="far fa-address-card"></i></span>
+						<span>Contact</span>
+					</h1>
+        
+        			<div id="contact-form-details-container">
+                    	<div id="contact-form">
+                            <form action="">
+                                <input type="text" name="name" placeholder="Your Name" class="contact-form-fields"/>
+								<input type="email" name="emailId" placeholder="Your Email" class="contact-form-fields"/>
+                                <textarea type="text" name="message" placeholder="Message" rows="2" cols="60" class="contact-form-fields"></textarea>
+                                <button type="submit">
+                                    SEND MESSAGE
+                                </button>
+                                
+                            </form>
+                        </div>
+                        <div id="contact-details">
+                            <div>
+                                <h3>
+                                    Get In Touch
+                                </h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </p>
+                            </div>
+                            <div>
+                                <h3>
+                                    My Address
+                                </h3>
+                                <ul>
+                                    <li><i class="fas fa-map-marker-alt"></i>Chandigarh, India</li>
+                                    <li><i class="fas fa-mobile-alt"></i>9780785939</li>
+                                    <li><i class="far fa-envelope"></i>dhruv.jain93@gmail.com</li>
+                                </ul>
+                            </div>
+                                
+                        </div>
+        			</div>
+        			<div id="contact-social-container">
+                        <ul class="horizontal-list text-center-align social">
+                            <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+                            <li><a href="#"><i class="fab fa-stack-overflow"></i></a></li>
+                            <li><a href="#experience"><i class="fab fa-google-plus-g"></i></a></li>
+                            <li><a href="#skills"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#education"><i class="fab fa-quora"></i></a></li>
+                        </ul>
+        			</div>
+				</section>
+			</main>
+		</div>
+		<script type="text/javascript" src="script.js"></script>
+	</body>
+</html>
+
+
+<!--Coding ninjas Resume Background image link : https://ninjasfiles.s3.amazonaws.com/asset_0000000000000020_1549743985_macbook_mouse.jpg-->
